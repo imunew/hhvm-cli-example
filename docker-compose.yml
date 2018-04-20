@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  hhvm:
+    build: .
+    volumes:
+      - ./:/app
+      - ~/.aws:/root/.aws
+    working_dir: /app
+    env_file: .env
